@@ -1,0 +1,154 @@
+/* 1. 清除浏览器默认样式（必须先做，避免不同浏览器显示不一致） */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* 让宽高计算更合理（包含边框和内边距） */
+}
+
+/* 2. 页面整体样式 */
+body {
+    background-color: #f8f9fa;
+    /* 浅灰色背景 */
+    font-family: "微软雅黑", "Arial", sans-serif;
+    /* 全局字体 */
+    color: #333;
+    /* 默认文字颜色 */
+    line-height: 1.7;
+    /* 行高（让文字更易读） */
+}
+
+/* 3. 头部区域样式 */
+.page-header {
+    background-color: white;
+    /* 白色背景 */
+    padding: 25px 0;
+    /* 上下内边距 25px，左右 0 */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    /* 底部阴影（增加立体感） */
+}
+
+.site-title {
+    color: #2d3436;
+    /* 深灰色标题 */
+    font-size: 32px;
+    text-align: center;
+    /* 标题居中 */
+    margin-bottom: 18px;
+    /* 和导航栏隔开一点 */
+}
+
+.nav-menu {
+    text-align: center;
+    /* 导航链接居中 */
+}
+
+.nav-menu a {
+    color: #0984e3;
+    /* 链接颜色（蓝色） */
+    text-decoration: none;
+    /* 去掉默认下划线 */
+    margin: 0 18px;
+    /* 链接之间的左右间距 */
+    font-size: 17px;
+    transition: color 0.3s;
+    /* 颜色变化时的过渡动画（更平滑） */
+}
+
+/* 鼠标悬停在链接上时的样式 */
+.nav-menu a:hover {
+    color: #74b9ff;
+    /* 颜色变浅一点 */
+    text-decoration: underline;
+    /* 显示下划线 */
+}
+
+/* 4. 内容区域样式 */
+.content {
+    max-width: 900px;
+    /* 内容最大宽度（避免太宽） */
+    margin: 40px auto;
+    /* 上下间距 40px，左右自动（水平居中） */
+    padding: 0 20px;
+    /* 小屏幕时左右留空隙 */
+}
+
+.article-card {
+    background-color: white;
+    padding: 30px;
+    /* 内边距（让内容不贴边） */
+    border-radius: 10px;
+    /* 圆角边框 */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    /* 卡片阴影 */
+}
+
+.article-title {
+    color: #2d3436;
+    font-size: 24px;
+    margin-bottom: 20px;
+    /* 和正文隔开 */
+    border-left: 4px solid #0984e3;
+    /* 标题左侧的蓝色竖线 */
+    padding-left: 15px;
+    /* 竖线和文字的距离 */
+}
+
+.article-text {
+    font-size: 16px;
+    color: #636e72;
+    /* 浅灰色文字 */
+    margin-bottom: 25px;
+    /* 和图片隔开 */
+}
+
+.article-img {
+    width: 100%;
+    /* 图片宽度占满容器 */
+    height: 250px;
+    /* 固定高度 */
+    object-fit: cover;
+    /* 图片保持比例裁剪（不变形） */
+    border-radius: 6px;
+    /* 图片圆角 */
+    margin-bottom: 25px;
+    /* 和按钮隔开 */
+}
+
+.read-more {
+    background-color: #0984e3;
+    /* 按钮背景色 */
+    color: white;
+    /* 文字白色 */
+    border: none;
+    /* 去掉默认边框 */
+    padding: 12px 24px;
+    /* 按钮内边距（控制大小） */
+    border-radius: 6px;
+    /* 按钮圆角 */
+    font-size: 16px;
+    cursor: pointer;
+    /* 鼠标悬停时显示手型 */
+    transition: background-color 0.3s;
+    /* 背景色变化的过渡动画 */
+}
+
+/* 按钮 hover 效果 */
+.read-more:hover {
+    background-color: #74b9ff;
+    /* 背景色变浅 */
+}
+
+/* 5. 页脚区域样式 */
+.page-footer {
+    background-color: #2d3436;
+    /* 深色背景 */
+    color: white;
+    /* 白色文字 */
+    text-align: center;
+    /* 文字居中 */
+    padding: 25px 0;
+    /* 上下内边距 */
+    margin-top: 60px;
+    /* 和内容区域隔开 */
+}

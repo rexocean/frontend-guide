@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML标签演示 - Flyking's colorful life</title>
+</head>
+
+<body>
+    <h3>无语义标签</h3>
+    <div>div是无语义标签类似于标题独占一行的大盒子</div> 
+    <span>span是小盒子一行可以排列多个</span> 
+    <span>span是小盒子一行可以排列多个</span>
+    
+    <h3>图像标签的使用 src是必须属性</h3> 
+    <img src="https://picsum.photos/id/237/200/300" alt="示例图片" />
+    
+    <h3>alt 图片无法显示时替换为文本 属性=属性值</h3> 
+    <img src="invalid-image.jpg" alt="这是一张示例图片，显示一只可爱的动物" />
+    
+    <h3>title 鼠标放在图片上时提示的文字 属性之间空格</h3>
+    <img src="https://picsum.photos/id/1025/200/300" alt="自然风景" title="这是一张美丽的自然风景照片" />
+    
+    <h3>width height 仅修改一个是等比缩放 单位像素</h3>
+    <img src="https://picsum.photos/id/1015/200/300" alt="山脉风景" title="山脉风景" width="100" height="100" />
+    
+    <h3 id="框框">border给图像设置边框 CSS内容</h3>
+    <img src="https://picsum.photos/id/1016/200/300" alt="自然景观" title="自然景观" width="100" border="10" /> <br />
+    <a href="#Iwant">返回我想看框框</a>
+    
+    <h3>图片相对路径 下一级和上一级</h3> 
+    <img src="https://picsum.photos/id/1018/200/300" alt="下一级目录示例图片" />
+    <img src="https://picsum.photos/id/1019/200/300" alt="上一级目录示例图片" />
+    
+    <h3>图片绝对路径 网络图片地址示例</h3>
+    <img src="https://picsum.photos/id/1022/200/300" alt="绝对路径示例图片" />
+    <img src="https://picsum.photos/id/1024/200/300" alt="南开大学图书馆图片" />
+    
+    <h3>超链接 href是必须属性 target可不设置 默认当前页面_self或新窗口_blank打开</h3>
+    
+    <h4>1. 外部链接 http://</h4>
+    <a href="http://www.qq.com" target="_blank">Tencent</a>
+    
+    <h4>2. 内部链接 html文件名 目录文件夹中的网页相互跳转</h4> 
+    <a href="sports-news.html">MY体育新闻</a>
+    
+    <h4>3. 空链接 未考虑好链接的情况</h4>
+    <a href="#">MY体育新闻IS NOT READY YET</a>
+    
+    <h4>4. 下载链接 href里的地址是一个文件 .exe或者.zip压缩包</h4>
+    <a href="sample.zip">点击下载示例压缩包</a>
+    
+    <h4>5. 网页中各种网页元素都可加链接</h4>
+    <a href="sample.zip"> 
+        <img src="https://picsum.photos/id/1028/100/100" title="点我可以下载压缩包哦~" alt="下载图片" /> 
+    </a>
+    <a href="http://www.baidu.com"> 
+        <img src="https://picsum.photos/id/1029/100/100" title="点我可以去百度哦~" alt="百度链接图片" /> 
+    </a>
+    
+    <h4 id="Iwant">6. 锚点链接 点击链接可以快速定位到页面的某个位置</h4> 
+    <a href="#框框">我想看看有边框的那张图</a>
+    
+    <h4>注释 可选中 快捷键ctrl+/</h4> 
+    <!-- 我是注释 -->
+    <!-- 我也注释 -->
+    
+    <h4>特殊字符</h4> 
+    空&nbsp;&nbsp;&nbsp;&nbsp;格 <br />
+    <!-- &lt; 是小于号 < 的实体编码，&gt; 是大于号 > 的实体编码 -->
+    &lt;p&gt;是个段落标签
+</body>
+
+</html>
